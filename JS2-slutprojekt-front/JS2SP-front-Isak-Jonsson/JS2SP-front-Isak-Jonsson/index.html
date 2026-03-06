@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="stylesheet" href="/src/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scrum board</title>
+</head>
+
+<body>
+<h1>Scrumboard</h1>
+  <form id="memberForm">
+    <h1>Add new Member</h1>
+    <input type="text" name="name" id="name" placeholder="Name" required />
+  
+
+    <label>select Member Category:</label>
+    <select name="category" id="category" autocomplete="off">
+      <option value="ux">ux</option>
+      <option value="dev backend">dev backend</option>
+      <option value="dev frontend">dev frontend</option>
+    </select>
+     <button type="submit">Add Member</button>
+  </form>
+
+  <form id="assignmentForm">
+    <h1>Add new assignment</h1>
+    <input type="text" name="title" id="title" placeholder="title" required />
+    <input type="text" name="description" id="description" placeholder="description" required />
+ 
+
+    <label>select assignment Category:</label>
+    <select name="category" id="category" autocomplete="off">
+      <option value="ux">ux</option>
+      <option value="dev backend">dev backend</option>
+      <option value="dev frontend">dev frontend</option>
+    </select>
+
+    <button type="submit">Add assignment</button>
+  </form>
+
+  <form id="assignForm">
+    <h1> Assign a Member a assignment</h1>
+    <label>select member to asign assignment:</label>
+    <select name="name" id="memberSelect" autocomplete="off">
+    </select>
+
+    <select name="title" id="assignmentSelect" autocomplete="off">
+    </select>
+    <button type="submit">Assign</button>
+  </form>
+  <div id="members">
+  
+  </div>
+
+<div id="board">
+  
+  <div class="new">
+
+  </div>
+
+    <div class="doing">
+
+  </div>
+
+    <div class="done">
+
+  </div>
+</div>
+
+
+  <script type="module" src="/src/main.ts" defer></script>
+</body>
+
+</html>

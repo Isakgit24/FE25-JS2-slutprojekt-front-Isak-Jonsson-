@@ -1,0 +1,44 @@
+.member {
+  border: 2px solid blue;
+  width: 150px;
+  text-align: center;
+   border-radius: 25px ;
+}
+
+.assignment {
+
+  border: 2px solid blue;
+  margin-bottom: 20px;
+   border-radius: 25px ;
+     width: 500px;
+}
+
+#assignmentForm {
+  padding-bottom: 20px;
+}
+
+#board {
+  display: flex;
+  align-items: start;
+  align-items: left;
+  justify-content: space-around;
+  flex-direction: row;
+
+}
+
+#members {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  gap: 10px;
+
+}
+
+button {
+  color: black;
+  background-color: white;
+  border-radius: 100px;
+}
+
